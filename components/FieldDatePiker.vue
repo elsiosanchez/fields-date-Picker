@@ -1,27 +1,19 @@
 <template>
-  <div>
-    <slot name="header" />
-    <br />
+  <el-card class="box-card">
     <el-date-picker
       v-model="dateValue"
       :type="typePiker"
       :format="formatDate"
       :shortcuts="shortcuts"
       :placeholder="placeholder"
-      :start-placeholder="startPlaceholder"
-      :end-placeholder="endPlaceholder"
-      :clearable="clearable"
-      :disabled="disabled"
     />
-    <br />
-    <slot name="footer" />
-  </div>
+  </el-card>
 </template>
 
 <script setup>
 const props = defineProps({
   value: {
-    type: Date | Number | String | Array,
+    type: String,
     required: false,
   },
   type: {

@@ -1,3 +1,3 @@
 <template>
-  <FieldDatePiker :type="'date'" :value="''" :sizes="'large'" />
+  <FieldDatePiker :valueDate="''" :typeDate="'date'" :placeholderDate="'alo'" />
 </template>

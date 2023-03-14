@@ -1,0 +1,10 @@
+<template>
+  <FieldDatePiker
+    :type="'date'"
+    :value="''"
+    :sizes="'large'"
+    :disabled="false"
+    :activeText="'On'"
+    :inactiveText="'OFF'"
+  />
+</template>
